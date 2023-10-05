@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="margin">
+        <div class="links">
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+        </div>
+        <div class="account">
+          <span class="login modalAction">Login | Sign Up</span>
+        </div>
+      </div>
+    </nav>
+    <div id="app" class="margin">
+      <!-- content injected here -->
+      <section></section>
+    </div>
+    <footer>
+      <div class="margin">
+        <div class="social"></div>
+        <p>&copy;2023 All Rights Reserved</p>
+        <div class="logo"></div>
+      </div>
+    </footer>
+    <div id="modal">
+      <div id="modal-background" class="modalAction"></div>
+      <div id="modal-content">
+        <div class="closeBtn modalAction">X</div>
+        <div class="sign signIN">
+          <h6>Login</h6>
+
+          <form>
+            <input type="email" placeholder="email" />
+            <input type="password" placeholder="password" />
+            <input type="submit" value="Login" class="modalAction" />
+          </form>
+        </div>
+        <div class="sign signUP">
+          <h6>Sign Up</h6>
+
+          <form>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="email" placeholder="email" />
+            <input type="password" placeholder="password" />
+            <input type="submit" value="Create Account" class="modalAction" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="lib/code.jquery.com_jquery-3.7.1.min.js"
+    ></script>
+    <script type="module" src="app/app.js"></script>
+  </body>
+</html>

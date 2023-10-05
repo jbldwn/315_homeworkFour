@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: borderbox;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.margin {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.close {
+  display: none;
+}
+
+nav {
+  background-color: black;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+nav .margin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .margin .links a {
+  margin-right: 20px;
+  text-transform: capitalize;
+}
+nav .margin .account .login {
+  cursor: pointer;
+}
+nav a,
+nav span {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  background-color: yellowgreen;
+  height: 80vh;
+}
+
+.home {
+  background-color: cadetblue;
+}
+
+.about {
+  background-color: rosybrown;
+}
+
+#modal {
+  background-color: rgba(85, 107, 47, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 75;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#modal-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#modal-content {
+  background-color: white;
+  height: 65%;
+  width: 50%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+#modal-content .closeBtn {
+  background-color: rgb(172, 26, 26);
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  border-radius: 8px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+#modal-content .sign {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+#modal-content .sign h6 {
+  font-size: 32px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 0;
+}
+#modal-content form {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#modal-content form label {
+  width: 100%;
+  text-align: start;
+  font-family: sans-serif;
+}
+#modal-content form input {
+  border: solid rgb(85, 107, 47) 1px;
+  padding: 5px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+#modal-content form input[type=submit] {
+  background-color: rgb(85, 107, 47);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+#modal-content form input[type=submit]:hover {
+  background-color: rgb(59, 75, 33);
+}
+#modal-content .signIN {
+  border-right: solid rgb(85, 107, 47) 1px;
+}
+#modal-content .signIN form input {
+  margin-bottom: 25px;
+}
+
+footer {
+  background-color: #8b8b8b;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+footer .margin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .margin div {
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=styles.css.map */
